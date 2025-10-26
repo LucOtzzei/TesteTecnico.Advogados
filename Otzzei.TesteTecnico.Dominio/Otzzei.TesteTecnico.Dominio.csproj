@@ -45,6 +45,9 @@
     <Compile Include="Advogado\Advogado.cs" />
     <Compile Include="Advogado\EspecialidadeEnum.cs" />
     <Compile Include="Advogado\SenioridadeEnum.cs" />
+    <Compile Include="Endereco\Endereco.cs" />
+    <Compile Include="Endereco\EstadoEnum.cs" />
+    <Compile Include="Endereco\LogradouroEnum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

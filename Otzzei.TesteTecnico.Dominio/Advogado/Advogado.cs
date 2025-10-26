@@ -21,12 +21,13 @@ namespace Otzzei.TesteTecnico.Dominio
         public DateTime CreatedAt { get; private set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; private set; } = DateTime.UtcNow;
 
-        public Advogado(string nome, string oab, SenioridadeEnum senioridade)
+        public Advogado(string nome, string oab, SenioridadeEnum senioridade, EspecialidadeEnum especialidade)
         {
             Id = Guid.NewGuid();
             Nome = nome;
             OAB = oab;
             Senioridade = senioridade;
+            Especialidade = especialidade;
         }
         public void AtualizarDados(string nome, SenioridadeEnum senioridade)
         {

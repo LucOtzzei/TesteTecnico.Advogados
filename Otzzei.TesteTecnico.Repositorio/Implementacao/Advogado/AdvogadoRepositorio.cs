@@ -30,16 +30,6 @@ namespace Otzzei.TesteTecnico.Repositorio.Implementacao
             return _advogados;
         }
 
-        public IEnumerable<Advogado> ListarAdvogadosPorEspecialidade(string especialidade)
-        {
-            return _advogados.Where(a => a.Especialidade.ToString() == especialidade).ToList();
-        }
-
-        public IEnumerable<Advogado> ListarAdvogadosPorSenioridade(string especialidade)
-        {
-            return _advogados.Where(a => a.Senioridade.ToString() == especialidade).ToList();
-        }
-
         public Advogado ObterAdvogadoPorId(Guid id)
         {
             return _advogados.FirstOrDefault(a => a.Id == id);

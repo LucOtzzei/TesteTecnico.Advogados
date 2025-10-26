@@ -1,0 +1,38 @@
+﻿@model Otzzei.TesteTecnico.Web.Models.AdvogadoViewModel
+
+@{
+    ViewBag.Title = "Cadastrar Advogado";
+}
+
+<h2>Cadastrar Advogado</h2>
+
+@using (Html.BeginForm("Criar", "Advogado", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        @Html.LabelFor(m => m.Nome)
+        @Html.TextBoxFor(m => m.Nome, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Nome)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.OAB)
+        @Html.TextBoxFor(m => m.OAB, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.OAB)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Senioridade)
+        @Html.EnumDropDownListFor(m => m.Senioridade, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Senioridade)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Especialidade)
+        @Html.EnumDropDownListFor(m => m.Especialidade, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Especialidade)
+    </div>
+
+    <button type="submit" class="btn btn-success">Salvar</button>
+    @Html.ActionLink("Voltar", "Index", null, new { @class = "btn btn-secondary" })
+}
