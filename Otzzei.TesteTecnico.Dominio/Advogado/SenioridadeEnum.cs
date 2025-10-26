@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Otzzei.TesteTecnico.Dominio.Advogado
+﻿namespace Otzzei.TesteTecnico.Dominio
 {
     public enum SenioridadeEnum
     {

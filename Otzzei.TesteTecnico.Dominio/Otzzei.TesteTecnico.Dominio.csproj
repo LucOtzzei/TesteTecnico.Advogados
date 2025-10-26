@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Advogado\Advogado.cs" />
+    <Compile Include="Advogado\EspecialidadeEnum.cs" />
     <Compile Include="Advogado\SenioridadeEnum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
